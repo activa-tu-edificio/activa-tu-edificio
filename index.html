@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Activa tu Edificio | IWG Expansión México</title>
+<meta name="description" content="¿Tienes un espacio de oficinas con potencial? Evalúa tu inmueble para oportunidades de expansión de IWG en México.">
+<style>
+:root{--navy:#071a2d;--navy2:#0c2e49;--gold:#c99b4b;--gold2:#e1bd77;--ink:#102231;--muted:#66727d;--paper:#f6f3ed;--line:#e7e0d6;--green:#0a7b57;--shadow:0 22px 60px rgba(7,26,45,.15)}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.48}
+img,video{display:block;max-width:100%} button,input,select,textarea{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inherit}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
+.top{position:fixed;inset:0 0 auto;z-index:50;background:rgba(6,22,37,.93);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}
+.topin{height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px;color:white}.brand{display:flex;align-items:center;gap:12px;font-weight:900}.brand img{width:54px;height:54px;object-fit:contain;background:white;border-radius:12px;padding:2px}.brandtext{line-height:1.03;font-size:18px}.brandtext small{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#d7c08f;margin-top:3px}.nav{display:flex;gap:20px;align-items:center;font-size:14px}.nav a{color:#dce6ec}.nav button{border:0;border-radius:999px;padding:11px 17px;background:var(--gold);color:#07131e;font-weight:900}
+.hero{min-height:760px;display:grid;align-items:center;padding:126px 0 76px;color:white;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(3,17,30,.96),rgba(3,17,30,.84) 43%,rgba(3,17,30,.22) 78%,rgba(3,17,30,.04)),url("asset-3f64466d44.png") center/cover no-repeat}.hero:after{content:"";position:absolute;inset:auto 0 0;height:100px;background:linear-gradient(transparent,var(--paper))}.hero .wrap{position:relative;z-index:2}.hero-copy{max-width:710px}.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.25);border-radius:999px;background:rgba(255,255,255,.08);padding:8px 13px;font-size:12px;font-weight:900;letter-spacing:.09em;text-transform:uppercase}.pill i{width:7px;height:7px;border-radius:50%;background:var(--gold2)}h1{font-size:clamp(48px,7vw,82px);line-height:.96;letter-spacing:-.06em;margin:22px 0 18px}.gold{color:var(--gold2)}.hero p{font-size:clamp(18px,2vw,24px);color:#e7eef3;max-width:660px;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{border:0;border-radius:14px;min-height:54px;padding:0 22px;font-weight:900}.primary{background:var(--gold);color:#07131e;box-shadow:0 10px 28px rgba(201,155,75,.25)}.ghost{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.25);color:#fff}.micro{font-size:13px!important;color:#c4d0d7!important;margin-top:15px!important}
+section{padding:70px 0}.kicker{text-transform:uppercase;letter-spacing:.12em;color:#8c6628;font-size:12px;font-weight:900}.title{font-size:clamp(34px,4.3vw,54px);line-height:1.03;letter-spacing:-.045em;margin:9px 0 14px}.lead{max-width:760px;color:var(--muted);font-size:18px;margin:0}
+.criteria{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}.criterion{background:white;border:1px solid var(--line);border-radius:18px;padding:21px;min-height:150px}.criterion .n{font-size:11px;color:var(--gold);font-weight:900;letter-spacing:.1em}.criterion h3{font-size:20px;margin:10px 0 6px}.criterion p{font-size:14px;color:var(--muted);margin:0}
+.split{display:grid;grid-template-columns:.92fr 1.08fr;gap:28px;align-items:center;margin-top:34px}.photo{border-radius:24px;overflow:hidden;box-shadow:var(--shadow);background:#081b2c}.photo img{width:100%;height:500px;object-fit:cover}.benefits{display:grid;gap:12px;margin-top:22px}.benefit{background:white;border:1px solid var(--line);border-radius:16px;padding:17px 18px;display:flex;gap:12px}.benefit i{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;flex:none;background:#f3e7d2;color:#80591d;font-style:normal;font-weight:900}.benefit h3{font-size:16px;margin:0 0 3px}.benefit p{font-size:13px;color:var(--muted);margin:0}.disclaimer{font-size:11px;color:#7b858d;margin-top:13px}
+.band{background:var(--navy);color:white}.band .lead{color:#c7d3db}.process{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:30px}.process article{border:1px solid rgba(255,255,255,.11);background:rgba(255,255,255,.055);border-radius:18px;padding:22px}.process .n{color:var(--gold2);font-size:11px;font-weight:900;letter-spacing:.1em}.process h3{font-size:21px;margin:10px 0 5px}.process p{font-size:14px;color:#c8d4dc;margin:0}
+.brands{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}.brands img{border-radius:24px;box-shadow:var(--shadow);width:100%;height:560px;object-fit:cover}.chips{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0}.chip{background:white;border:1px solid var(--line);border-radius:999px;padding:9px 13px;font-size:14px;font-weight:850}
+.video-card{background:#061724;color:white;border-radius:26px;padding:22px;display:grid;grid-template-columns:minmax(280px,360px) 1fr;gap:34px;align-items:center;box-shadow:var(--shadow)}.video-card video{width:100%;height:auto;aspect-ratio:9/16;object-fit:contain;border-radius:18px;background:#000;max-height:620px;margin:auto}.video-copy{padding:18px}.video-copy h2{font-size:42px;line-height:1.03;letter-spacing:-.045em;margin:10px 0 13px}.video-copy p{font-size:17px;color:#c9d6de;margin:0 0 18px}
+.brand-banner{padding:55px 0}.brand-banner img{width:100%;border-radius:26px;box-shadow:var(--shadow)}
+footer{background:#061724;color:#aebdc6;padding:34px 0 95px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px}.foot strong{color:white}.foot small{max-width:760px;line-height:1.55}
+.mobilebar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:60}.mobilebar button{width:100%;border:0;border-radius:14px;padding:15px;background:var(--gold);color:#07131e;font-weight:900;box-shadow:0 14px 34px rgba(0,0,0,.24)}
+.modal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;background:rgba(3,14,24,.72);backdrop-filter:blur(8px);padding:18px}.modal.open{display:flex}.modalbox{width:min(800px,100%);max-height:94vh;overflow:auto;background:white;border-radius:26px;box-shadow:0 30px 90px rgba(0,0,0,.32)}.modalhead{display:flex;justify-content:space-between;gap:20px;padding:22px 25px 16px;border-bottom:1px solid var(--line);position:sticky;top:0;background:white;z-index:4}.modalhead h2{margin:0;font-size:28px;letter-spacing:-.035em}.modalhead p{margin:4px 0 0;color:var(--muted);font-size:12px}.close{width:38px;height:38px;border:0;border-radius:50%;background:#f0ede7;font-size:20px}.progress{height:4px;background:#eeeae4}.progress span{display:block;width:50%;height:100%;background:var(--gold);transition:.25s}.formbody{padding:24px 25px 28px}.pane{display:none}.pane.active{display:block}.pane h3{font-size:20px;margin:0 0 17px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:7px;margin-bottom:14px}.field label{font-size:13px;font-weight:850}.field small{font-size:11px;color:var(--muted)}input,select,textarea{width:100%;border:1px solid #d7dce1;border-radius:12px;background:white;padding:13px 14px;color:var(--ink);outline:none}input:focus,select:focus,textarea:focus{border-color:#b7873a;box-shadow:0 0 0 3px rgba(201,155,75,.14)}textarea{min-height:92px;resize:vertical}.hint{font-size:11px;color:#68747e;margin-top:5px}.alert{display:none;background:#fff3df;border:1px solid #ebd1a3;color:#79521c;border-radius:10px;padding:10px 11px;font-size:12px;margin-top:7px}.alert.show{display:block}.formactions{display:flex;justify-content:space-between;gap:12px;margin-top:18px}.back{background:#f1eee8;color:#233440}.next,.submit{background:var(--navy);color:white}.consent{display:flex;gap:8px;align-items:flex-start;font-size:11px;color:var(--muted)}.consent input{width:17px;height:17px;margin-top:1px}.success{display:none;text-align:center;padding:42px 30px}.success.show{display:block}.success .tick{width:62px;height:62px;border-radius:50%;background:#e8f6f0;color:#0a7855;display:grid;place-items:center;margin:0 auto 14px;font-size:30px}.success h3{font-size:29px;margin:0 0 7px}.success p{color:var(--muted);max-width:520px;margin:0 auto 18px}.wa{display:inline-flex;background:#1fa855;color:white;border-radius:12px;padding:12px 16px;font-weight:850}
+@media(max-width:900px){.criteria{grid-template-columns:1fr 1fr}.split,.brands,.video-card{grid-template-columns:1fr}.process{grid-template-columns:1fr}.brands img{height:520px}.video-card video{height:auto;max-height:620px;aspect-ratio:9/16;object-fit:contain}.nav a{display:none}}
+@media(max-width:620px){.wrap{width:min(100% - 24px,1180px)}.topin{height:66px}.brand img{width:44px;height:44px}.brandtext{font-size:15px}.hero{min-height:720px;padding:108px 0 58px;background:linear-gradient(180deg,rgba(3,17,30,.50),rgba(3,17,30,.92) 55%,rgba(3,17,30,.98)),url("asset-3f64466d44.png") 60% center/cover no-repeat}h1{font-size:49px}.actions .btn{width:100%}.criteria{grid-template-columns:1fr}.photo img{height:390px}.brands img{height:430px}.video-card{padding:12px}.video-card video{height:auto;max-height:560px;aspect-ratio:9/16;object-fit:contain}.video-copy{padding:10px}.video-copy h2{font-size:34px}.grid2{grid-template-columns:1fr}.modal{padding:0}.modalbox{height:100vh;max-height:100vh;border-radius:0}.modalhead{padding:17px 18px}.formbody{padding:19px 18px}.mobilebar{display:block}footer{padding-bottom:110px}}
+
+.socials{display:flex;gap:10px;margin-top:12px}
+.socials a{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:white;transition:.2s}
+.socials a:hover{transform:translateY(-2px);background:rgba(255,255,255,.14)}
+.socials svg{width:18px;height:18px;fill:currentColor}
+
+
+.address-wrap{position:relative}
+.address-suggestions{position:absolute;left:0;right:0;top:100%;z-index:30;background:#fff;border:1px solid #d7dce1;border-radius:12px;margin-top:6px;box-shadow:0 18px 42px rgba(7,26,45,.14);overflow:hidden;display:none}
+.address-suggestions.open{display:block}
+.address-option{padding:12px 14px;border-bottom:1px solid #eeeae4;cursor:pointer}
+.address-option:last-child{border-bottom:0}
+.address-option:hover,.address-option.active{background:#f7f3eb}
+.address-option strong{display:block;font-size:13px;color:#102231}
+.address-option small{display:block;font-size:11px;color:#6f7a83;margin-top:2px}
+.address-status{font-size:11px;color:#66727d;margin-top:6px}
+.address-status.ok{color:#0a7b57;font-weight:800}
+.address-status.warn{color:#9a6518;font-weight:800}
+
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap topin">
+<a href="#" class="brand"><img src="asset-3a3cc42a34.png" alt="Logo Activa tu Edificio"><div class="brandtext">Activa tu Edificio<small>Expansión inmobiliaria</small></div></a>
+<nav class="nav"><a href="#buscamos">Qué buscamos</a><a href="#modelo">Cómo funciona</a><button class="openform">Evaluar mi inmueble</button></nav>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap"><div class="hero-copy">
+<div class="pill"><i></i> IWG · Expansión México</div>
+<h1>¿Tienes un espacio de oficinas <span class="gold">con potencial</span>?</h1>
+<p><strong>Descubre cómo superar la renta tradicional.</strong> Evalúa si tu inmueble puede convertirse en una nueva ubicación para una de las marcas globales de IWG.</p>
+<div class="actions"><button class="btn primary openform">Evaluar mi inmueble</button></div>
+<p class="micro">Evaluación inicial sin costo · Desde 300 m² · Propietarios · Desarrolladores · Brokers · México</p>
+</div></div></section>
+
+<section id="buscamos"><div class="wrap">
+<div class="kicker">El inmueble que buscamos</div><h2 class="title">Buscamos ubicaciones con potencial.</h2><p class="lead">En menos de 2 minutos puedes solicitar una evaluación inicial de tu inmueble.</p>
+<div class="criteria">
+<div class="criterion"><div class="n">01 · ESCALA</div><h3>Desde 300 m²</h3><p>Evaluamos oportunidades desde 300 m²; los espacios de mayor metraje pueden tener prioridad.</p></div>
+<div class="criterion"><div class="n">02 · UBICACIÓN</div><h3>En México</h3><p>Evaluamos oportunidades en todo México.</p></div>
+<div class="criterion"><div class="n">03 · PERFIL</div><h3>Propietario o broker</h3><p>Dueños, desarrolladores y asesores con acceso directo al inmueble.</p></div>
+<div class="criterion"><div class="n">04 · ACTIVO</div><h3>Oficinas y centros</h3><p>Edificios, pisos, business centers, coworkings y activos convertibles.</p></div>
+</div>
+
+<div class="split">
+<div class="photo"><img src="asset-928e69454b.png" alt="Edificio corporativo"></div>
+<div><div class="kicker">Por qué evaluarlo</div><h2 class="title">Más que metros cuadrados.</h2><p class="lead">Analizamos si tu inmueble puede aprovechar mejor su potencial frente a una renta tradicional.</p>
+<div class="benefits">
+<div class="benefit"><i>↗</i><div><h3>Potencial de mayor ingreso</h3><p>El análisis compara el desempeño esperado del modelo con las condiciones del inmueble.</p></div></div>
+<div class="benefit"><i>◎</i><div><h3>Operación de oficinas flexibles</h3><p>El activo se evalúa para una posible operación bajo una de las marcas del grupo.</p></div></div>
+<div class="benefit"><i>◆</i><div><h3>Mejor aprovechamiento</h3><p>Diseño, inventario, ocupación y operación se estructuran alrededor del potencial real del espacio.</p></div></div>
+</div><div class="disclaimer">Las proyecciones dependen de ubicación, inversión, demanda, ocupación, condiciones del inmueble y términos de cada proyecto. No constituyen una garantía de ingresos.</div><button class="btn primary openform" style="margin-top:18px">Evaluar mi inmueble</button>
+</div></div>
+</div></section>
+
+<section class="band" id="modelo"><div class="wrap">
+<div class="kicker">Cómo funciona</div><h2 class="title">Primero el inmueble. Después, los números.</h2><p class="lead">Compartes la información del inmueble. Nosotros hacemos una primera revisión y, si vemos potencial, te contactamos por WhatsApp para avanzar.</p>
+<div class="process">
+<article><div class="n">PASO 01</div><h3>Comparte la ubicación</h3><p>Dirección exacta, metraje, tipo de inmueble y datos básicos del activo.</p></article>
+<article><div class="n">PASO 02</div><h3>Evaluamos el potencial</h3><p>Revisamos ubicación, escala y características generales del inmueble.</p></article>
+<article><div class="n">PASO 03</div><h3>Modelamos la oportunidad</h3><p>Si vemos potencial, te contactamos por WhatsApp para solicitar lo necesario y coordinar los siguientes pasos.</p></article>
+</div></div></section>
+
+<section><div class="wrap brands">
+<div><div class="kicker">Una red global de marcas</div><h2 class="title">Un inmueble. Diferentes conceptos.</h2><p class="lead">El formato adecuado depende de la ubicación, demanda, metraje y perfil del activo.</p><div class="chips"><span class="chip">Regus</span><span class="chip">Spaces</span><span class="chip">HQ</span><span class="chip">Signature</span><span class="chip">Open Office</span></div><button class="btn primary openform">Evaluar mi inmueble</button></div>
+<img src="asset-5becbfc72a.png" alt="Regus, Spaces, HQ, Signature y Open Office">
+</div></section>
+
+<section><div class="wrap video-card">
+<video controls playsinline poster="asset-cfee1bb62d.png"><source src="asset-7f7821e78d.mp4" type="video/mp4"></video>
+<div class="video-copy"><div class="kicker">IWG · Expansión México</div><h2>Tu edificio puede ser la próxima ubicación.</h2><p>Si tienes un espacio desde 300 m², envíanos el inmueble. Lo revisaremos y, si vemos potencial, nuestro equipo te contactará por WhatsApp.</p><button class="btn primary openform">Evaluar mi inmueble</button></div>
+</div></section>
+
+<section class="brand-banner"><div class="wrap"><img src="asset-cfee1bb62d.png" alt="Activa el potencial de tu inmueble"></div></section>
+</main>
+
+<footer><div class="wrap foot"><div><strong>Activa tu Edificio</strong><br>Oportunidades inmobiliarias · México
+<div class="socials">
+<a href="https://www.instagram.com/activatuedificio/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Activa tu Edificio" title="Instagram">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm10.5 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+</a>
+<a href="https://www.facebook.com/profile.php?id=61594015210078&locale=es_LA" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Activa tu Edificio" title="Facebook">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6h1.7V4.8c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2H7.3v3h2.8v8h3.4z"/></svg>
+</a>
+</div>
+<a href="aviso-privacidad.html" target="_blank" rel="noopener" style="display:inline-block;margin-top:10px;color:#e1bd77;font-weight:800">Aviso de privacidad</a></div><small>Canal de generación y evaluación inicial de oportunidades inmobiliarias. Las marcas IWG, Regus, Spaces, HQ, Signature y Open Office se mencionan en relación con oportunidades de expansión del grupo. La información enviada se utiliza para evaluar el inmueble y dar seguimiento a la oportunidad.</small></div></footer>
+<div class="mobilebar"><button class="openform">Evaluar mi inmueble</button></div>
+
+<div class="modal" id="modal"><div class="modalbox">
+<div class="modalhead"><div><h2>Evalúa tu inmueble</h2><p id="steplabel">Paso 1 de 2 · Información del inmueble</p></div><button class="close" id="closebtn">×</button></div>
+<div class="progress"><span id="bar"></span></div>
+<div class="formbody" id="formbody"><form id="leadform">
+<div class="pane active" data-step="1"><h3>Cuéntanos del inmueble</h3>
+<div class="field"><label>Dirección exacta *</label>
+<div class="address-wrap">
+<input id="address" required autocomplete="off" placeholder="Empieza a escribir la dirección...">
+<div id="addressSuggestions" class="address-suggestions"></div>
+</div>
+<div id="addressStatus" class="address-status">Escribe al menos 3 caracteres y selecciona una sugerencia.</div>
+</div>
+<div class="grid2"><div class="field"><label>m² disponibles *</label><input id="sqm" type="number" min="1" required placeholder="Ej. 1200"><small>Evaluamos oportunidades desde 300 m².</small></div><div class="field"><label>Tipo de inmueble *</label><select id="ptype" required><option value="">Selecciona</option><option>Edificio de oficinas</option><option>Piso(s) de oficinas</option><option>Business center</option><option>Coworking existente</option><option>Uso mixto / desarrollo</option><option>Otro</option></select></div></div>
+<div class="grid2"><div class="field"><label>Tu relación con el inmueble *</label><select id="relation" required><option value="">Selecciona</option><option>Propietario</option><option>Desarrollador</option><option>Broker / asesor inmobiliario</option><option>Operador de business center / coworking</option><option>Otro</option></select></div><div class="field"><label>Ocupación actual</label><select id="occupancy"><option value="">No lo sé / no aplica</option><option>Vacío</option><option>1%–25%</option><option>26%–50%</option><option>51%–75%</option><option>76%–100%</option></select></div></div>
+<div class="field"><label>Nombre del inmueble</label><input id="property" placeholder="Ej. Torre Central"></div><div class="formactions"><span></span><button type="button" class="btn next" id="nextbtn">Continuar</button></div></div>
+
+<div class="pane" data-step="2"><h3>¿Con quién damos seguimiento?</h3>
+<div class="grid2"><div class="field"><label>Nombre *</label><input id="name" required></div><div class="field"><label>Teléfono *</label><input id="phone" required inputmode="tel" placeholder="+52..."></div></div>
+<div class="field"><label>Correo electrónico *</label><input id="email" type="email" required></div>
+<div class="field"><label>Comentarios</label><textarea id="notes" placeholder="Disponibilidad, estacionamientos, renta esperada, planos disponibles, etc."></textarea></div>
+<label class="consent"><input id="consent" type="checkbox" required><span>He leído el <a href="aviso-privacidad.html" target="_blank" rel="noopener" style="text-decoration:underline;font-weight:800">Aviso de Privacidad</a> y acepto el tratamiento de mis datos para evaluar el inmueble, dar seguimiento a la oportunidad y contactarme por WhatsApp, teléfono o correo.</span></label><div class="alert" id="cloudError">No pudimos guardar la solicitud. Intenta nuevamente.</div>
+<div class="formactions"><button type="button" class="btn back" id="backbtn">Atrás</button><button type="submit" class="btn submit" id="submitbtn">Evaluar mi inmueble</button></div></div>
+</form></div>
+<div class="success" id="success"><div class="tick">✓</div><h3>Recibimos tu inmueble.</h3><p>Recibimos la información. Haremos una primera revisión y te contactaremos por WhatsApp si vemos potencial para avanzar.</p></div>
+</div></div>
+
+<script>
+const SUPABASE_URL = "https://rnujcgdffpkhfyvbpzeh.supabase.co";
+const SUPABASE_KEY = "sb_publishable_jb_EhYLWxVYGAZ-tsGOrew_nbSRh2re";
+const GEOAPIFY_KEY = "756898f4001d41e3b97062b52930ec5b";
+
+const modal=document.getElementById("modal");
+const panes=[...document.querySelectorAll(".pane")];
+const addressInput=document.getElementById("address");
+const suggestionBox=document.getElementById("addressSuggestions");
+const addressStatus=document.getElementById("addressStatus");
+let selectedPlace=null;
+let debounceTimer=null;
+let lastQuery="";
+let activeIndex=-1;
+
+function openForm(){
+  modal.classList.add("open");
+  document.body.style.overflow="hidden";
+  setTimeout(()=>addressInput.focus(),120);
+}
+function closeForm(){
+  modal.classList.remove("open");
+  document.body.style.overflow="";
+  suggestionBox.classList.remove("open");
+}
+document.querySelectorAll(".openform").forEach(x=>x.addEventListener("click",openForm));
+document.getElementById("closebtn").onclick=closeForm;
+modal.onclick=e=>{if(e.target===modal)closeForm()};
+
+function step(n){
+  panes.forEach((p,i)=>p.classList.toggle("active",i===n-1));
+  document.getElementById("bar").style.width=n===1?"50%":"100%";
+  document.getElementById("steplabel").textContent=n===1
+    ?"Paso 1 de 2 · Información del inmueble"
+    :"Paso 2 de 2 · Datos de contacto";
+}
+
+function esc(s=""){
+  return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[m]));
+}
+
+function clearAddressSelection(){
+  selectedPlace=null;
+  addressStatus.textContent="Escribe al menos 3 caracteres y selecciona una sugerencia.";
+  addressStatus.className="address-status";
+}
+
+function renderSuggestions(results){
+  activeIndex=-1;
+  if(!results.length){
+    suggestionBox.innerHTML='<div class="address-option"><small>No encontramos coincidencias. Prueba con calle, número y ciudad.</small></div>';
+    suggestionBox.classList.add("open");
+    return;
+  }
+  suggestionBox.innerHTML=results.map((r,i)=>`
+    <div class="address-option" data-i="${i}">
+      <strong>${esc(r.address_line1 || r.name || r.formatted || "Dirección")}</strong>
+      <small>${esc(r.address_line2 || r.formatted || "")}</small>
+    </div>`).join("");
+  suggestionBox.classList.add("open");
+
+  [...suggestionBox.querySelectorAll(".address-option[data-i]")].forEach(el=>{
+    el.addEventListener("click",()=>chooseAddress(results[Number(el.dataset.i)]));
+  });
+}
+
+function chooseAddress(r){
+  selectedPlace=r;
+  addressInput.value=r.formatted || [r.address_line1,r.address_line2].filter(Boolean).join(", ");
+  suggestionBox.classList.remove("open");
+  addressStatus.textContent="✓ Dirección seleccionada correctamente.";
+  addressStatus.className="address-status ok";
+}
+
+async function searchAddress(q){
+  lastQuery=q;
+  addressStatus.textContent="Buscando dirección...";
+  addressStatus.className="address-status";
+
+  const params=new URLSearchParams({
+    text:q,
+    apiKey:GEOAPIFY_KEY,
+    format:"json",
+    filter:"countrycode:mx",
+    limit:"6",
+    lang:"es"
+  });
+
+  try{
+    const res=await fetch("https://api.geoapify.com/v1/geocode/autocomplete?"+params.toString());
+    if(!res.ok) throw new Error(await res.text());
+    const data=await res.json();
+    if(q!==lastQuery) return;
+    const results=Array.isArray(data.results) ? data.results : [];
+    renderSuggestions(results);
+    addressStatus.textContent=results.length
+      ?"Selecciona la dirección correcta de la lista."
+      :"No encontramos coincidencias. Intenta escribir más información.";
+    addressStatus.className=results.length?"address-status":"address-status warn";
+  }catch(err){
+    console.error("Geoapify:",err);
+    suggestionBox.classList.remove("open");
+    addressStatus.textContent="No pudimos consultar direcciones ahora. Puedes escribirla manualmente y continuar.";
+    addressStatus.className="address-status warn";
+  }
+}
+
+addressInput.addEventListener("input",()=>{
+  clearAddressSelection();
+  const q=addressInput.value.trim();
+  clearTimeout(debounceTimer);
+  if(q.length<3){
+    suggestionBox.classList.remove("open");
+    return;
+  }
+  debounceTimer=setTimeout(()=>searchAddress(q),350);
+});
+
+addressInput.addEventListener("keydown",e=>{
+  const opts=[...suggestionBox.querySelectorAll(".address-option[data-i]")];
+  if(!suggestionBox.classList.contains("open") || !opts.length) return;
+  if(e.key==="ArrowDown"){e.preventDefault();activeIndex=Math.min(activeIndex+1,opts.length-1);}
+  else if(e.key==="ArrowUp"){e.preventDefault();activeIndex=Math.max(activeIndex-1,0);}
+  else if(e.key==="Enter" && activeIndex>=0){e.preventDefault();opts[activeIndex].click();return;}
+  else if(e.key==="Escape"){suggestionBox.classList.remove("open");return;}
+  else return;
+  opts.forEach((x,i)=>x.classList.toggle("active",i===activeIndex));
+});
+
+document.addEventListener("click",e=>{
+  if(!e.target.closest(".address-wrap")) suggestionBox.classList.remove("open");
+});
+
+document.getElementById("nextbtn").onclick=()=>{
+  for(const id of["address","sqm","ptype","relation"]){
+    const el=document.getElementById(id);
+    if(!el.checkValidity()){el.reportValidity();return}
+  }
+  // If Geoapify returned suggestions, require selection for quality.
+  if(!selectedPlace && addressStatus.textContent.includes("Selecciona")){
+    addressStatus.textContent="Selecciona una de las direcciones sugeridas antes de continuar.";
+    addressStatus.className="address-status warn";
+    addressInput.focus();
+    return;
+  }
+  step(2);
+};
+document.getElementById("backbtn").onclick=()=>step(1);
+
+const utm=n=>new URLSearchParams(location.search).get(n)||null;
+
+document.getElementById("leadform").onsubmit=async e=>{
+  e.preventDefault();
+  if(!e.target.reportValidity())return;
+
+  const btn=document.getElementById("submitbtn");
+  const errBox=document.getElementById("cloudError");
+  if(errBox) errBox.classList.remove("show");
+  btn.disabled=true;
+  btn.textContent="Enviando...";
+
+  const p=selectedPlace||{};
+  const lead={
+    status:"Nuevo",
+    exact_address:addressInput.value.trim(),
+    sqm:Number(document.getElementById("sqm").value),
+    property_type:document.getElementById("ptype").value,
+    relationship:document.getElementById("relation").value,
+    occupancy:document.getElementById("occupancy").value||null,
+    property_name:document.getElementById("property").value.trim()||null,
+    contact_name:document.getElementById("name").value.trim(),
+    phone:document.getElementById("phone").value.trim(),
+    email:document.getElementById("email").value.trim(),
+    notes:document.getElementById("notes").value.trim()||null,
+    city:p.city || p.county || null,
+    state:p.state || null,
+    country:p.country || "México",
+    postal_code:p.postcode || null,
+    place_id:p.place_id || null,
+    latitude:Number.isFinite(p.lat)?p.lat:null,
+    longitude:Number.isFinite(p.lon)?p.lon:null,
+    utm_source:utm("utm_source"),
+    utm_medium:utm("utm_medium"),
+    utm_campaign:utm("utm_campaign"),
+    utm_content:utm("utm_content"),
+    utm_term:utm("utm_term"),
+    referrer:document.referrer||null,
+    landing_url:location.href
+  };
+
+  try{
+    const response=await fetch(`${SUPABASE_URL}/rest/v1/leads`,{
+      method:"POST",
+      headers:{
+        "apikey":SUPABASE_KEY,
+        "Authorization":`Bearer ${SUPABASE_KEY}`,
+        "Content-Type":"application/json",
+        "Prefer":"return=minimal"
+      },
+      body:JSON.stringify(lead)
+    });
+    if(!response.ok) throw new Error(await response.text());
+
+    if(typeof fbq==="function")fbq("track","Lead");
+    if(typeof gtag==="function")gtag("event","generate_lead");
+
+    document.getElementById("formbody").style.display="none";
+    document.querySelector(".progress").style.display="none";
+    document.getElementById("success").classList.add("show");
+  }catch(err){
+    console.error(err);
+    if(errBox){
+      errBox.textContent="No se pudo guardar la solicitud. Vuelve a intentar.";
+      errBox.classList.add("show");
+    }else{
+      alert("No se pudo guardar la solicitud. Vuelve a intentar.");
+    }
+    btn.disabled=false;
+    btn.textContent="Evaluar mi inmueble";
+  }
+};
+</script>
+</body></html>
