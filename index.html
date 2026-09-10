@@ -76,6 +76,22 @@ footer{background:#061724;color:#aebdc6;padding:34px 0 95px}.foot{display:flex;j
     padding:6px 4px 0;
   }
 }
+@media (max-width:620px){
+  /* Quita el CTA del header únicamente en celular */
+  .nav button{
+    display:none !important;
+  }
+
+  /* El botón flotante no aparece al abrir */
+  .mobilebar{
+    display:none !important;
+  }
+
+  /* Aparece después de pasar el hero */
+  .mobilebar.show{
+    display:block !important;
+  }
+}  
 </style>
 </head>
 <body>
@@ -393,5 +409,25 @@ document.getElementById("leadform").onsubmit=async e=>{
     btn.textContent="Evaluar mi inmueble";
   }
 };
+const mobileBar = document.querySelector(".mobilebar");
+const heroSection = document.querySelector(".hero");
+
+function controlMobileCTA(){
+  if(window.innerWidth <= 620){
+    const heroBottom = heroSection.getBoundingClientRect().bottom;
+
+    if(heroBottom < 80){
+      mobileBar.classList.add("show");
+    }else{
+      mobileBar.classList.remove("show");
+    }
+  }else{
+    mobileBar.classList.remove("show");
+  }
+}
+
+window.addEventListener("scroll", controlMobileCTA);
+window.addEventListener("resize", controlMobileCTA);
+controlMobileCTA();  
 </script>
 </body></html>
