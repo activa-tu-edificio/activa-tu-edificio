@@ -42,7 +42,22 @@ footer{background:#061724;color:#aebdc6;padding:34px 0 95px}.foot{display:flex;j
 .address-status{font-size:11px;color:#66727d;margin-top:6px}
 .address-status.ok{color:#0a7b57;font-weight:800}
 .address-status.warn{color:#9a6518;font-weight:800}
+@media(max-width:900px){
+  .brands img{
+    width:min(100%,520px);
+    height:auto;
+    object-fit:contain;
+    margin:0 auto;
+    display:block;
+  }
+}
 
+@media(max-width:620px){
+  .brands img{
+    width:min(100%,390px);
+    height:auto;
+  }
+}
 </style>
 </head>
 <body>
