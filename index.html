@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="icon" type="image/png" href="favicon.png">
 <title>Activa tu Edificio | IWG Expansión México</title>
 <meta name="description" content="¿Tienes un espacio de oficinas con potencial? Evalúa tu inmueble para oportunidades de expansión de IWG en México.">
 <style>
@@ -24,7 +24,31 @@ footer{background:#061724;color:#aebdc6;padding:34px 0 95px}.foot{display:flex;j
 .mobilebar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:60}.mobilebar button{width:100%;border:0;border-radius:14px;padding:15px;background:var(--gold);color:#07131e;font-weight:900;box-shadow:0 14px 34px rgba(0,0,0,.24)}
 .modal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;background:rgba(3,14,24,.72);backdrop-filter:blur(8px);padding:18px}.modal.open{display:flex}.modalbox{width:min(800px,100%);max-height:94vh;overflow:auto;background:white;border-radius:26px;box-shadow:0 30px 90px rgba(0,0,0,.32)}.modalhead{display:flex;justify-content:space-between;gap:20px;padding:22px 25px 16px;border-bottom:1px solid var(--line);position:sticky;top:0;background:white;z-index:4}.modalhead h2{margin:0;font-size:28px;letter-spacing:-.035em}.modalhead p{margin:4px 0 0;color:var(--muted);font-size:12px}.close{width:38px;height:38px;border:0;border-radius:50%;background:#f0ede7;font-size:20px}.progress{height:4px;background:#eeeae4}.progress span{display:block;width:50%;height:100%;background:var(--gold);transition:.25s}.formbody{padding:24px 25px 28px}.pane{display:none}.pane.active{display:block}.pane h3{font-size:20px;margin:0 0 17px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:7px;margin-bottom:14px}.field label{font-size:13px;font-weight:850}.field small{font-size:11px;color:var(--muted)}input,select,textarea{width:100%;border:1px solid #d7dce1;border-radius:12px;background:white;padding:13px 14px;color:var(--ink);outline:none}input:focus,select:focus,textarea:focus{border-color:#b7873a;box-shadow:0 0 0 3px rgba(201,155,75,.14)}textarea{min-height:92px;resize:vertical}.hint{font-size:11px;color:#68747e;margin-top:5px}.alert{display:none;background:#fff3df;border:1px solid #ebd1a3;color:#79521c;border-radius:10px;padding:10px 11px;font-size:12px;margin-top:7px}.alert.show{display:block}.formactions{display:flex;justify-content:space-between;gap:12px;margin-top:18px}.back{background:#f1eee8;color:#233440}.next,.submit{background:var(--navy);color:white}.consent{display:flex;gap:8px;align-items:flex-start;font-size:11px;color:var(--muted)}.consent input{width:17px;height:17px;margin-top:1px}.success{display:none;text-align:center;padding:42px 30px}.success.show{display:block}.success .tick{width:62px;height:62px;border-radius:50%;background:#e8f6f0;color:#0a7855;display:grid;place-items:center;margin:0 auto 14px;font-size:30px}.success h3{font-size:29px;margin:0 0 7px}.success p{color:var(--muted);max-width:520px;margin:0 auto 18px}.wa{display:inline-flex;background:#1fa855;color:white;border-radius:12px;padding:12px 16px;font-weight:850}
 @media(max-width:900px){.criteria{grid-template-columns:1fr 1fr}.split,.brands,.video-card{grid-template-columns:1fr}.process{grid-template-columns:1fr}.brands>img{width:min(100%,400px);height:auto;object-fit:contain;margin:8px auto 0}.video-card>img{height:auto;max-height:620px;aspect-ratio:9/16;object-fit:cover}.nav a{display:none}}
-@media(max-width:620px){.wrap{width:min(100% - 24px,1180px)}.topin{height:66px}.brand img{width:44px;height:44px}.brandtext{font-size:15px}.hero{min-height:720px;padding:108px 0 58px;background:linear-gradient(180deg,rgba(3,17,30,.50),rgba(3,17,30,.92) 55%,rgba(3,17,30,.98)),url("asset-3f64466d44.png") 60% center/cover no-repeat}h1{font-size:49px}.actions .btn{width:100%}.criteria{grid-template-columns:1fr}.photo img{height:390px}.brands img{height:430px}.video-card{padding:12px}.video-card>img{height:auto;max-height:560px;aspect-ratio:9/16;object-fit:cover}.video-copy{padding:10px}.video-copy h2{font-size:34px}.grid2{grid-template-columns:1fr}.modal{padding:0}.modalbox{height:100vh;max-height:100vh;border-radius:0}.modalhead{padding:17px 18px}.formbody{padding:19px 18px}.mobilebar{display:block}footer{padding-bottom:110px}}
+@media(max-width:620px){
+  .wrap{width:min(100% - 24px,1180px)}
+  .topin{height:66px}
+  .brand img{width:44px;height:44px}
+  .brandtext{font-size:15px}
+  .nav button{display:none!important}
+  .hero{min-height:720px;padding:108px 0 58px;background:linear-gradient(180deg,rgba(3,17,30,.50),rgba(3,17,30,.92) 55%,rgba(3,17,30,.98)),url("asset-3f64466d44.png") 60% center/cover no-repeat}
+  h1{font-size:49px}
+  .actions .btn{width:100%}
+  .criteria{grid-template-columns:1fr}
+  .photo img{height:390px}
+  .brands>img{width:min(100%,340px);height:auto!important;max-height:none;object-fit:contain;margin:12px auto 0;display:block;border-radius:18px}
+  .video-card{display:flex;flex-direction:column-reverse;gap:18px;padding:16px}
+  .video-card>img{width:min(100%,340px);height:auto;max-height:none;aspect-ratio:auto;object-fit:contain;margin:0 auto;border-radius:18px}
+  .video-copy{padding:6px 4px 0}
+  .video-copy h2{font-size:34px}
+  .grid2{grid-template-columns:1fr}
+  .modal{padding:0}
+  .modalbox{height:100vh;max-height:100vh;border-radius:0}
+  .modalhead{padding:17px 18px}
+  .formbody{padding:19px 18px}
+  .mobilebar{display:none!important}
+  .mobilebar.show{display:block!important}
+  footer{padding-bottom:110px}
+}
 
 .socials{display:flex;gap:10px;margin-top:12px}
 .socials a{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:white;transition:.2s}
@@ -43,55 +67,7 @@ footer{background:#061724;color:#aebdc6;padding:34px 0 95px}.foot{display:flex;j
 .address-status{font-size:11px;color:#66727d;margin-top:6px}
 .address-status.ok{color:#0a7b57;font-weight:800}
 .address-status.warn{color:#9a6518;font-weight:800}
-@media (max-width:620px){
 
-  .brands>img{
-    width:min(100%,340px);
-    height:auto !important;
-    max-height:none;
-    object-fit:contain;
-    margin:12px auto 0;
-    display:block;
-    border-radius:18px;
-  }
-
-  .video-card{
-    display:flex;
-    flex-direction:column-reverse;
-    gap:18px;
-    padding:16px;
-  }
-
-  .video-card>img{
-    width:min(100%,340px);
-    height:auto;
-    max-height:none;
-    aspect-ratio:auto;
-    object-fit:contain;
-    margin:0 auto;
-    border-radius:18px;
-  }
-
-  .video-copy{
-    padding:6px 4px 0;
-  }
-}
-@media (max-width:620px){
-  /* Quita el CTA del header únicamente en celular */
-  .nav button{
-    display:none !important;
-  }
-
-  /* El botón flotante no aparece al abrir */
-  .mobilebar{
-    display:none !important;
-  }
-
-  /* Aparece después de pasar el hero */
-  .mobilebar.show{
-    display:block !important;
-  }
-}  
 </style>
 </head>
 <body>
@@ -169,10 +145,10 @@ footer{background:#061724;color:#aebdc6;padding:34px 0 95px}.foot{display:flex;j
 <div class="pane active" data-step="1"><h3>Cuéntanos del inmueble</h3>
 <div class="field"><label>Dirección exacta *</label>
 <div class="address-wrap">
-<input id="address" required autocomplete="off" placeholder="Empieza a escribir la dirección...">
+<input id="address" required autocomplete="off" placeholder="Ej. Blvd. Campestre 250, León">
 <div id="addressSuggestions" class="address-suggestions"></div>
 </div>
-<div id="addressStatus" class="address-status">Escribe al menos 3 caracteres y selecciona una sugerencia.</div>
+<div id="addressStatus" class="address-status">Escribe calle, número y ciudad. Selecciona una dirección de la lista.</div>
 </div>
 <div class="grid2"><div class="field"><label>m² disponibles *</label><input id="sqm" type="number" min="1" required placeholder="Ej. 1200"><small>Evaluamos oportunidades desde 300 m².</small></div><div class="field"><label>Tipo de inmueble *</label><select id="ptype" required><option value="">Selecciona</option><option>Edificio de oficinas</option><option>Piso(s) de oficinas</option><option>Business center</option><option>Coworking existente</option><option>Uso mixto / desarrollo</option><option>Otro</option></select></div></div>
 <div class="grid2"><div class="field"><label>Tu relación con el inmueble *</label><select id="relation" required><option value="">Selecciona</option><option>Propietario</option><option>Desarrollador</option><option>Broker / asesor inmobiliario</option><option>Operador de business center / coworking</option><option>Otro</option></select></div><div class="field"><label>Ocupación actual</label><select id="occupancy"><option value="">No lo sé / no aplica</option><option>Vacío</option><option>1%–25%</option><option>26%–50%</option><option>51%–75%</option><option>76%–100%</option></select></div></div>
@@ -231,22 +207,77 @@ function esc(s=""){
 
 function clearAddressSelection(){
   selectedPlace=null;
-  addressStatus.textContent="Escribe al menos 3 caracteres y selecciona una sugerencia.";
+  addressStatus.textContent="Escribe calle, número y ciudad. Selecciona una dirección de la lista.";
   addressStatus.className="address-status";
+}
+
+function normalizeText(s=""){
+  return String(s)
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g,"")
+    .toLowerCase()
+    .trim();
+}
+
+function addressScore(r,q){
+  let score=0;
+
+  if(r.housenumber) score+=24;
+  if(r.street) score+=14;
+  if(r.city) score+=7;
+  if(r.state) score+=3;
+  if(r.postcode) score+=3;
+
+  if(r.result_type==="building") score+=10;
+  if(r.result_type==="street") score+=6;
+
+  if(["city","state","country","county"].includes(r.result_type)){
+    score-=30;
+  }
+
+  const formatted=normalizeText(r.formatted||"");
+  const tokens=normalizeText(q).split(/\s+/).filter(t=>t.length>2);
+
+  tokens.forEach(t=>{
+    if(formatted.includes(t)) score+=4;
+  });
+
+  const confidence=Number(r.rank?.confidence||0);
+  score+=confidence*6;
+
+  return score;
+}
+
+function addressPrimary(r){
+  const streetNumber=[r.street,r.housenumber].filter(Boolean).join(" ");
+  return streetNumber || r.address_line1 || r.formatted || "Dirección";
+}
+
+function addressSecondary(r){
+  const parts=[r.city,r.county,r.state,r.postcode,r.country].filter(Boolean);
+  return [...new Set(parts)].join(", ");
 }
 
 function renderSuggestions(results){
   activeIndex=-1;
+
   if(!results.length){
-    suggestionBox.innerHTML='<div class="address-option"><small>No encontramos coincidencias. Prueba con calle, número y ciudad.</small></div>';
+    suggestionBox.innerHTML=`
+      <div class="address-option">
+        <small>No encontramos esa dirección. Prueba con calle, número y ciudad.</small>
+      </div>
+    `;
     suggestionBox.classList.add("open");
     return;
   }
+
   suggestionBox.innerHTML=results.map((r,i)=>`
     <div class="address-option" data-i="${i}">
-      <strong>${esc(r.address_line1 || r.name || r.formatted || "Dirección")}</strong>
-      <small>${esc(r.address_line2 || r.formatted || "")}</small>
-    </div>`).join("");
+      <strong>${esc(addressPrimary(r))}</strong>
+      <small>${esc(addressSecondary(r))}</small>
+    </div>
+  `).join("");
+
   suggestionBox.classList.add("open");
 
   [...suggestionBox.querySelectorAll(".address-option[data-i]")].forEach(el=>{
@@ -256,7 +287,13 @@ function renderSuggestions(results){
 
 function chooseAddress(r){
   selectedPlace=r;
-  addressInput.value=r.formatted || [r.address_line1,r.address_line2].filter(Boolean).join(", ");
+
+  addressInput.value=
+    r.formatted ||
+    [r.street,r.housenumber,r.city,r.state,r.country]
+      .filter(Boolean)
+      .join(", ");
+
   suggestionBox.classList.remove("open");
   addressStatus.textContent="✓ Dirección seleccionada correctamente.";
   addressStatus.className="address-status ok";
@@ -272,25 +309,58 @@ async function searchAddress(q){
     apiKey:GEOAPIFY_KEY,
     format:"json",
     filter:"countrycode:mx",
-    limit:"6",
+    limit:"10",
     lang:"es"
   });
 
+  /*
+    Si aún no escriben un número, favorecemos calles.
+    Cuando ya hay número, dejamos que Geoapify busque la dirección completa.
+  */
+  if(!/\d/.test(q)){
+    params.set("type","street");
+  }
+
   try{
-    const res=await fetch("https://api.geoapify.com/v1/geocode/autocomplete?"+params.toString());
+    const res=await fetch(
+      "https://api.geoapify.com/v1/geocode/autocomplete?"+params.toString()
+    );
+
     if(!res.ok) throw new Error(await res.text());
+
     const data=await res.json();
+
     if(q!==lastQuery) return;
-    const results=Array.isArray(data.results) ? data.results : [];
+
+    let results=Array.isArray(data.results) ? data.results : [];
+
+    results=results
+      .filter(r=>{
+        return (
+          r.street ||
+          r.housenumber ||
+          r.result_type==="street" ||
+          r.result_type==="building" ||
+          (r.address_line1 && r.city)
+        );
+      })
+      .sort((a,b)=>addressScore(b,q)-addressScore(a,q))
+      .slice(0,6);
+
     renderSuggestions(results);
-    addressStatus.textContent=results.length
-      ?"Selecciona la dirección correcta de la lista."
-      :"No encontramos coincidencias. Intenta escribir más información.";
-    addressStatus.className=results.length?"address-status":"address-status warn";
+
+    if(results.length){
+      addressStatus.textContent="Selecciona la dirección correcta de la lista.";
+      addressStatus.className="address-status";
+    }else{
+      addressStatus.textContent="Escribe calle, número y ciudad. Ej. Blvd. Campestre 250, León.";
+      addressStatus.className="address-status warn";
+    }
+
   }catch(err){
     console.error("Geoapify:",err);
     suggestionBox.classList.remove("open");
-    addressStatus.textContent="No pudimos consultar direcciones ahora. Puedes escribirla manualmente y continuar.";
+    addressStatus.textContent="No pudimos consultar direcciones. Intenta nuevamente.";
     addressStatus.className="address-status warn";
   }
 }
@@ -327,7 +397,7 @@ document.getElementById("nextbtn").onclick=()=>{
     if(!el.checkValidity()){el.reportValidity();return}
   }
   // If Geoapify returned suggestions, require selection for quality.
-  if(!selectedPlace && addressStatus.textContent.includes("Selecciona")){
+  if(!selectedPlace){
     addressStatus.textContent="Selecciona una de las direcciones sugeridas antes de continuar.";
     addressStatus.className="address-status warn";
     addressInput.focus();
@@ -409,13 +479,15 @@ document.getElementById("leadform").onsubmit=async e=>{
     btn.textContent="Evaluar mi inmueble";
   }
 };
+
 const mobileBar = document.querySelector(".mobilebar");
 const heroSection = document.querySelector(".hero");
 
 function controlMobileCTA(){
+  if(!mobileBar || !heroSection) return;
+
   if(window.innerWidth <= 620){
     const heroBottom = heroSection.getBoundingClientRect().bottom;
-
     if(heroBottom < 80){
       mobileBar.classList.add("show");
     }else{
@@ -426,8 +498,9 @@ function controlMobileCTA(){
   }
 }
 
-window.addEventListener("scroll", controlMobileCTA);
+window.addEventListener("scroll", controlMobileCTA, {passive:true});
 window.addEventListener("resize", controlMobileCTA);
-controlMobileCTA();  
+controlMobileCTA();
+
 </script>
 </body></html>
